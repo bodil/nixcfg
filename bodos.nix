@@ -15,10 +15,6 @@
 
     # desktop apps
     firefox-bin thunderbird-bin evince
-
-    # all this just to build evilvte
-    gnome.vte glib pango gnome.gtk cairo gdk_pixbuf atk freetype xlibs.libX11
-    xlibs.xproto xlibs.kbproto xlibs.libXext xlibs.xextproto
   ];
 
   networking.networkmanager.enable = true;
