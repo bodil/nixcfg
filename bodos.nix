@@ -14,7 +14,7 @@
     gnome3.gnome_themes_standard gnome3.gnome_icon_theme
 
     # desktop apps
-    firefox-bin thunderbird-bin
+    firefox-bin thunderbird-bin evince
 
     # all this just to build evilvte
     gnome.vte glib pango gnome.gtk cairo gdk_pixbuf atk freetype xlibs.libX11
