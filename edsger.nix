@@ -8,7 +8,7 @@
   boot.loader.gummiboot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.kernelPackages = pkgs.linuxPackages_3_15;
+  boot.kernelPackages = pkgs.linuxPackages_3_16;
 
   boot.initrd.availableKernelModules = [ "xhci_hcd" "ehci_pci" "ahci" "usb_storage" ];
   boot.kernelModules = [ "kvm-intel" ];
