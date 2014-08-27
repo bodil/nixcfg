@@ -10,11 +10,11 @@
 
     # desktop components
     dmenu xlibs.xbacklight xscreensaver unclutter compton networkmanagerapplet
-    feh xlibs.xrandr i3status liberation_ttf
+    feh xlibs.xrandr i3status liberation_ttf pavucontrol
     gnome3.gnome_themes_standard gnome3.gnome_icon_theme
 
     # desktop apps
-    firefoxWrapper thunderbird-bin
+    firefox-bin thunderbird-bin
 
     # all this just to build evilvte
     gnome.vte glib pango gnome.gtk cairo gdk_pixbuf atk freetype xlibs.libX11
