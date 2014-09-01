@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     # essentials
-    tmux htop wget ponysay psmisc gptfdisk
+    tmux htop wget ponysay psmisc gptfdisk gnupg
 
     # build essentials
     binutils gcc gnumake pkgconfig python
