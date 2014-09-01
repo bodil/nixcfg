@@ -8,7 +8,9 @@
     ];
 
   boot.cleanTmpDir = true;
-  boot.kernel.sysctl = {};
+  boot.kernel.sysctl = {
+    "fs.inotify.max_user_watches" = "1048576";
+  };
 
   i18n = {
     consoleFont = "lat9w-16";
