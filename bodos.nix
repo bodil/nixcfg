@@ -10,7 +10,7 @@
 
     # desktop components
     dmenu xlibs.xbacklight xscreensaver unclutter compton networkmanagerapplet
-    feh xlibs.xrandr i3status liberation_ttf pavucontrol
+    feh xlibs.xrandr i3status liberation_ttf pavucontrol libnotify
     gnome3.gnome_themes_standard gnome3.gnome_icon_theme
 
     # desktop apps
