@@ -27,6 +27,8 @@
     startGnuPGAgent = true;
   };
 
+  services.udisks2.enable = true;
+
   programs.ssh.startAgent = false;
 
   # Can this be any more fragile pls?
