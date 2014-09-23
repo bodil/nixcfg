@@ -6,7 +6,7 @@
     tmux htop wget ponysay psmisc gptfdisk gnupg
 
     # build essentials
-    binutils gcc gnumake pkgconfig python
+    binutils gcc gnumake pkgconfig python ruby
 
     # desktop components
     dmenu xlibs.xbacklight xscreensaver unclutter compton networkmanagerapplet
