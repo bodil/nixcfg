@@ -10,8 +10,8 @@
 
     # desktop components
     dmenu xlibs.xbacklight xscreensaver unclutter compton networkmanagerapplet
-    feh xlibs.xrandr i3status liberation_ttf pavucontrol libnotify
-    gnome3.gnome_themes_standard gnome3.gnome_icon_theme
+    feh xlibs.xrandr i3status liberation_ttf pavucontrol libnotify notify_osd
+    gnome3.gnome_themes_standard gnome3.gnome_icon_theme gnome3.gsettings_desktop_schemas
 
     # desktop apps
     firefox-bin thunderbird-bin evince
@@ -28,6 +28,7 @@
   };
 
   services.udisks2.enable = true;
+  services.gnome3.at-spi2-core.enable = true;
 
   programs.ssh.startAgent = false;
 
