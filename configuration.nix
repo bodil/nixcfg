@@ -5,6 +5,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./bodos.nix
+      ./local.nix
     ];
 
   boot.cleanTmpDir = true;
