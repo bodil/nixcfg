@@ -30,7 +30,7 @@
 
   nixpkgs.config.allowUnfree = true; # :((( this is because of btsync
   environment.systemPackages = with pkgs; [
-    emacs zsh joe git nodejs-unstable ponysay bittorrentSync evilvte mu
+    emacs zsh joe git nodejs-unstable ponysay bittorrentSync evilvte mu powertop
   ];
 
   environment.shells = [ "/run/current-system/sw/bin/zsh" ];
