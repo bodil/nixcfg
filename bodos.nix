@@ -9,9 +9,11 @@
     binutils gcc gnumake pkgconfig python ruby
 
     # desktop components
-    dmenu xlibs.xbacklight xscreensaver unclutter compton networkmanagerapplet
-    feh xlibs.xrandr i3status liberation_ttf pavucontrol libnotify notify-osd
-    gnome3.gnome_themes_standard gnome3.gnome_icon_theme gnome3.gsettings_desktop_schemas
+    dmenu xlibs.xbacklight xscreensaver unclutter compton
+    networkmanagerapplet volumeicon pavucontrol feh
+    xlibs.xrandr i3status liberation_ttf pavucontrol
+    libnotify notify-osd gnome3.gnome_themes_standard
+    gnome3.gnome_icon_theme gnome3.gsettings_desktop_schemas
 
     # desktop apps
     firefox-bin thunderbird-bin evince
