@@ -36,14 +36,13 @@
 
   programs.ssh.startAgent = false;
 
-  # Can this be any more fragile pls?
-  environment.variables.GTK_DATA_PREFIX = "/nix/store/q8iaqz63ms1algsfr96hz6dnq4r9d7q5-gnome-themes-standard-3.12.0";
+  environment.variables.GTK_DATA_PREFIX = "${pkgs.gnome3.gnome_themes_standard}";
 
   environment.etc."gtk-3.0/settings.ini".text = ''
     [Settings]
     gtk-theme-name=Adwaita
     gtk-icon-theme-name=gnome
-    gtk-font-name=Liberation Sans 13
+    gtk-font-name=Liberation Sans 15
     gtk-cursor-theme-name=Adwaita
     gtk-cursor-theme-size=0
     gtk-toolbar-style=GTK_TOOLBAR_BOTH
