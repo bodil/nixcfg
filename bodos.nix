@@ -11,9 +11,11 @@
     # desktop components
     dmenu xlibs.xbacklight xscreensaver unclutter compton
     networkmanagerapplet volumeicon pavucontrol feh
+    udisks2 python27Packages.udiskie
     xlibs.xrandr i3status liberation_ttf pavucontrol
-    libnotify notify-osd gnome3.gnome_themes_standard
+    libnotify gnome3.gnome_themes_standard
     gnome3.gnome_icon_theme gnome3.gsettings_desktop_schemas
+    acpi dunst jq
 
     # desktop apps
     firefox-bin thunderbird-bin evince
