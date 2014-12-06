@@ -36,7 +36,7 @@
   environment.shells = [ "/run/current-system/sw/bin/zsh" ];
   environment.variables.EDITOR = pkgs.lib.mkForce "joe";
 
-  networking.extraHosts = "127.0.0.1 news.ycombinator.com";
+  networking.extraHosts = "127.0.0.1 news.ycombinator.com www.reddit.com";
   networking.interfaceMonitor = { enable = true; beep = true; };
   networking.tcpcrypt.enable = true;
 
