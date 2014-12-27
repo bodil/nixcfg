@@ -39,7 +39,10 @@
 
   networking.extraHosts = "127.0.0.1 news.ycombinator.com www.reddit.com";
   networking.interfaceMonitor = { enable = true; beep = true; };
-  networking.tcpcrypt.enable = true;
+  networking.tcpcrypt.enable = false;
+
+  services.cron.enable = true;
+  services.cron.mailto = "admin@lol.camp";
 
   # users.mutableUsers = false;
   users.extraUsers.bodil = {
