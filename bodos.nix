@@ -11,14 +11,13 @@
     # desktop components
     dmenu xlibs.xbacklight xscreensaver unclutter compton
     networkmanagerapplet volumeicon pavucontrol feh
-    udisks2 python27Packages.udiskie
-    xlibs.xrandr i3status liberation_ttf pavucontrol
+    xlibs.xrandr i3blocks liberation_ttf pavucontrol
     libnotify gnome3.gnome_themes_standard
     gnome3.gnome_icon_theme gnome3.gsettings_desktop_schemas
-    acpi dunst jq
+    acpi dunst jq spike
 
     # desktop apps
-    firefox-bin thunderbird-bin evince
+    firefox-bin evince
   ];
 
   networking.networkmanager.enable = true;
