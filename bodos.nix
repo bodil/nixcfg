@@ -11,13 +11,13 @@
     # desktop components
     dmenu xlibs.xbacklight xscreensaver unclutter compton
     networkmanagerapplet volumeicon pavucontrol feh
-    xlibs.xrandr i3blocks liberation_ttf pavucontrol
+    xlibs.xrandr liberation_ttf pavucontrol
     libnotify gnome3.gnome_themes_standard
-    gnome3.gnome_icon_theme gnome3.gsettings_desktop_schemas
-    acpi dunst jq spike
+    gnome3.adwaita-icon-theme gnome3.gsettings_desktop_schemas
+    acpi dunst jq i3status i3lock i3blocks
 
     # desktop apps
-    firefox-bin evince
+    chromium firefox-bin evince
   ];
 
   networking.networkmanager.enable = true;
@@ -25,7 +25,7 @@
   services.xserver = {
     enable = true;
     windowManager.i3.enable = true;
-    displayManager.lightdm.enable = true;
+    displayManager.slim.enable = true;
     desktopManager.xterm.enable = false;
     startGnuPGAgent = true;
   };
@@ -41,7 +41,7 @@
     [Settings]
     gtk-theme-name=Adwaita
     gtk-icon-theme-name=gnome
-    gtk-font-name=Liberation Sans 15
+    gtk-font-name=Droid Sans 20
     gtk-cursor-theme-name=Adwaita
     gtk-cursor-theme-size=0
     gtk-toolbar-style=GTK_TOOLBAR_BOTH
@@ -88,25 +88,25 @@
       </match>
       <match target="pattern">
         <test qual="any" name="family"><string>Helvetica</string></test>
-        <edit name="family" mode="assign"><string>Liberation Sans</string></edit>
+        <edit name="family" mode="assign"><string>Droid Sans</string></edit>
       </match>
 
       <alias>
         <family>sans-serif</family>
         <prefer>
-          <family>Liberation Sans</family>
+          <family>Droid Sans</family>
         </prefer>
       </alias>
       <alias>
         <family>serif</family>
         <prefer>
-          <family>Liberation Serif</family>
+          <family>Droid Serif</family>
         </prefer>
       </alias>
       <alias>
         <family>monospace</family>
         <prefer>
-          <family>Liberation Mono</family>
+          <family>PragmataPro</family>
         </prefer>
       </alias>
 

@@ -24,22 +24,23 @@
     xkbOptions = "ctrl:nocaps,eurosign:e";
   };
 
+  nix.trustedBinaryCaches = [ https://hydra.nixos.org ];
   nix.useChroot = true;
 
   services.openssh.enable = true;
 
   nixpkgs.config.allowUnfree = true; # :((( this is because of btsync
   environment.systemPackages = with pkgs; [
-    emacs zsh joe git nodejs-unstable ponysay bittorrentSync evilvte mu powertop
-    file inetutils lftp offlineimap unzip xlibs.xev duply rsync
+    emacs fish joe git nodejs ponysay bittorrentSync evilvte mu powertop
+    file inetutils lftp unzip xlibs.xev rsync
   ];
 
   environment.shells = [ "/run/current-system/sw/bin/zsh" ];
   environment.variables.EDITOR = pkgs.lib.mkForce "joe";
 
   networking.extraHosts = "127.0.0.1 news.ycombinator.com www.reddit.com";
-  networking.interfaceMonitor = { enable = true; beep = true; };
-  networking.tcpcrypt.enable = false;
+  # networking.interfaceMonitor = { enable = true; beep = true; };
+  # networking.tcpcrypt.enable = false;
 
   services.cron.enable = true;
   services.cron.mailto = "admin@lol.camp";
@@ -52,7 +53,7 @@
     uid = 1000;
     createHome = true;
     home = "/home/bodil";
-    shell = "/run/current-system/sw/bin/zsh";
+    shell = "/run/current-system/sw/bin/fish";
   };
 
   nixpkgs.config.evilvte.config = ''
@@ -71,7 +72,7 @@
     #define COMMAND_SHOW_OPTIONS TRUE
     #define COMMAND_SHOW_VERSION TRUE
     #define COMMAND_TAB_NUMBERS TRUE
-    #define FONT "Pragmata Pro 15"
+    #define FONT "Pragmata Pro 21"
     #define FONT_ANTI_ALIAS TRUE
     #define FONT_ENABLE_BOLD_TEXT TRUE
     #define MOUSE_CTRL_SATURATION TRUE
